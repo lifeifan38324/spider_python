@@ -1,0 +1,909 @@
+2022-10-18 16:41:52 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 16:41:52 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 16:41:52 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 16:41:52 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 16:41:52 [scrapy.extensions.telnet] INFO: Telnet Password: 746f0e724badbed1
+2022-10-18 16:41:52 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 16:41:52 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 16:41:52 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 16:41:52 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 16:41:52 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 16:41:52 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 16:41:52 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 16:41:52 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://music.163.com/> from <GET http://music.163.com/>
+2022-10-18 16:41:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/> (referer: None)
+2022-10-18 16:41:53 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 16:41:53 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 426,
+ 'downloader/request_count': 2,
+ 'downloader/request_method_count/GET': 2,
+ 'downloader/response_bytes': 28634,
+ 'downloader/response_count': 2,
+ 'downloader/response_status_count/200': 1,
+ 'downloader/response_status_count/302': 1,
+ 'elapsed_time_seconds': 0.489381,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 8, 41, 53, 324130),
+ 'httpcompression/response_bytes': 141354,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 3,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 2,
+ 'scheduler/dequeued/memory': 2,
+ 'scheduler/enqueued': 2,
+ 'scheduler/enqueued/memory': 2,
+ 'start_time': datetime.datetime(2022, 10, 18, 8, 41, 52, 834749)}
+2022-10-18 16:41:53 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:07:55 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:07:55 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:07:55 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:07:55 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:07:55 [scrapy.extensions.telnet] INFO: Telnet Password: a72ef7fed037ffbf
+2022-10-18 17:07:55 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:07:56 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:07:56 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:07:56 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:07:56 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:07:56 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:07:56 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:07:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:07:56 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:07:56 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41325,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.573028,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 7, 56, 819990),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 7, 56, 246962)}
+2022-10-18 17:07:56 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:09:22 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:09:22 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:09:22 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:09:22 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:09:22 [scrapy.extensions.telnet] INFO: Telnet Password: 94a1cf0ccef914f3
+2022-10-18 17:09:22 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:09:22 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:09:22 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:09:22 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:09:22 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:09:23 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:09:23 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:09:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:09:23 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:09:23 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41296,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.593892,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 9, 23, 679890),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 9, 23, 85998)}
+2022-10-18 17:09:23 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:15:12 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:15:12 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:15:12 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:15:12 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:15:12 [scrapy.extensions.telnet] INFO: Telnet Password: c358fe6459e8a8b3
+2022-10-18 17:15:12 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:15:13 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:15:13 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:15:13 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:15:13 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:15:13 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:15:13 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:15:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:15:13 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:15:13 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41335,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.761655,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 15, 13, 924732),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 15, 13, 163077)}
+2022-10-18 17:15:13 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:19:00 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:19:00 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:19:00 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:19:00 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:19:00 [scrapy.extensions.telnet] INFO: Telnet Password: 9262386ff26e4880
+2022-10-18 17:19:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:19:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:19:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:19:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:19:01 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:19:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:19:01 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:19:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:19:01 [scrapy.core.scraper] ERROR: Spider error processing <GET https://music.163.com/discover/toplist> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\紫林晶\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 891, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\紫林晶\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\spiders\__init__.py", line 67, in _parse
+    return self.parse(response, **kwargs)
+  File "C:\Users\紫林晶\Desktop\PythonCode\code1\爬虫\scrapy_music\scrapy_music\spiders\music.py", line 13, in parse
+    print(text.extract_first())
+AttributeError: 'str' object has no attribute 'extract_first'
+2022-10-18 17:19:02 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:19:02 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40317,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.758092,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 19, 2, 20458),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 19, 1, 262366)}
+2022-10-18 17:19:02 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:21:07 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:21:07 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:21:07 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:21:07 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:21:07 [scrapy.extensions.telnet] INFO: Telnet Password: 5991f53529dcccf8
+2022-10-18 17:21:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:21:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:21:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:21:07 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:21:07 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:21:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:21:07 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:21:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:21:07 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:21:07 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40177,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.561227,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 21, 7, 938449),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 21, 7, 377222)}
+2022-10-18 17:21:07 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:21:25 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:21:25 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:21:25 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:21:25 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:21:25 [scrapy.extensions.telnet] INFO: Telnet Password: cfc6adcc09a6dbf6
+2022-10-18 17:21:25 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:21:25 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:21:25 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:21:25 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:21:25 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:21:25 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:21:25 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:21:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:21:25 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:21:25 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41150,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.554637,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 21, 25, 876494),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 21, 25, 321857)}
+2022-10-18 17:21:25 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:24:01 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:24:01 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:24:01 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:24:01 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:24:01 [scrapy.extensions.telnet] INFO: Telnet Password: 3d26514c39b6ddd0
+2022-10-18 17:24:01 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:24:01 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:24:01 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:24:01 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:24:01 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:24:01 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:24:01 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:24:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:24:01 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:24:01 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41622,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.514223,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 24, 1, 947855),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 24, 1, 433632)}
+2022-10-18 17:24:01 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:26:07 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:26:07 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:26:07 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:26:07 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:26:07 [scrapy.extensions.telnet] INFO: Telnet Password: 14b137643eb3e313
+2022-10-18 17:26:07 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:26:07 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:26:07 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:26:07 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:26:07 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:26:07 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:26:07 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:26:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:26:08 [scrapy.core.scraper] ERROR: Spider error processing <GET https://music.163.com/discover/toplist> (referer: None)
+Traceback (most recent call last):
+  File "C:\Users\紫林晶\AppData\Local\Programs\Python\Python310\lib\site-packages\twisted\internet\defer.py", line 891, in _runCallbacks
+    current.result = callback(  # type: ignore[misc]
+  File "C:\Users\紫林晶\AppData\Local\Programs\Python\Python310\lib\site-packages\scrapy\spiders\__init__.py", line 67, in _parse
+    return self.parse(response, **kwargs)
+  File "C:\Users\紫林晶\Desktop\PythonCode\code1\爬虫\scrapy_music\scrapy_music\spiders\music.py", line 13, in parse
+    print(text.xpath('./a').extract_first())
+AttributeError: 'str' object has no attribute 'xpath'
+2022-10-18 17:26:08 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:26:08 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40432,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.634229,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 26, 8, 410373),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'spider_exceptions/AttributeError': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 26, 7, 776144)}
+2022-10-18 17:26:08 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:26:18 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:26:18 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:26:18 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:26:18 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:26:18 [scrapy.extensions.telnet] INFO: Telnet Password: b0263272dd4b311e
+2022-10-18 17:26:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:26:19 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:26:19 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:26:19 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:26:19 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:26:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:26:19 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:26:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:26:19 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:26:19 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40334,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.633584,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 26, 19, 868308),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 26, 19, 234724)}
+2022-10-18 17:26:19 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:26:36 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:26:36 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:26:36 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:26:36 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:26:36 [scrapy.extensions.telnet] INFO: Telnet Password: 7b21c861516878ec
+2022-10-18 17:26:36 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:26:37 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:26:37 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:26:37 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:26:37 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:26:37 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:26:37 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:26:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:26:37 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:26:37 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40360,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.558349,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 26, 37, 792876),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 26, 37, 234527)}
+2022-10-18 17:26:37 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:28:20 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:28:20 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:28:20 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:28:20 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:28:20 [scrapy.extensions.telnet] INFO: Telnet Password: 19fc4309ffe6047a
+2022-10-18 17:28:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:28:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:28:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:28:20 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:28:20 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:28:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:28:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:28:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:28:21 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:28:21 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40601,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.735592,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 28, 21, 591909),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 28, 20, 856317)}
+2022-10-18 17:28:21 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:39:29 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:39:29 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:39:29 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:39:29 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:39:29 [scrapy.extensions.telnet] INFO: Telnet Password: ff8616820120c94d
+2022-10-18 17:39:29 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:39:29 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:39:29 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:39:29 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:39:29 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:39:29 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:39:29 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:39:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:39:30 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:39:30 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 41509,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.808447,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 39, 30, 355334),
+ 'httpcompression/response_bytes': 260843,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 39, 29, 546887)}
+2022-10-18 17:39:30 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 17:55:43 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 17:55:43 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 17:55:43 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 17:55:43 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 17:55:43 [scrapy.extensions.telnet] INFO: Telnet Password: 30152f6d081dfcd3
+2022-10-18 17:55:43 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 17:55:44 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 17:55:44 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 17:55:44 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 17:55:44 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 17:55:44 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 17:55:44 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 17:55:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 17:55:44 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 17:55:44 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40707,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 0.754609,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 9, 55, 44, 990268),
+ 'httpcompression/response_bytes': 260850,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 9, 55, 44, 235659)}
+2022-10-18 17:55:44 [scrapy.core.engine] INFO: Spider closed (finished)
+2022-10-18 21:08:31 [scrapy.utils.log] INFO: Scrapy 2.6.3 started (bot: scrapy_music)
+2022-10-18 21:08:31 [scrapy.utils.log] INFO: Versions: lxml 4.9.1.0, libxml2 2.9.12, cssselect 1.1.0, parsel 1.6.0, w3lib 2.0.1, Twisted 22.8.0, Python 3.10.5 (tags/v3.10.5:f377153, Jun  6 2022, 16:14:13) [MSC v.1929 64 bit (AMD64)], pyOpenSSL 22.1.0 (OpenSSL 3.0.5 5 Jul 2022), cryptography 38.0.1, Platform Windows-10-10.0.22621-SP0
+2022-10-18 21:08:31 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'scrapy_music',
+ 'LOG_FILE': 'music.log',
+ 'NEWSPIDER_MODULE': 'scrapy_music.spiders',
+ 'SPIDER_MODULES': ['scrapy_music.spiders']}
+2022-10-18 21:08:31 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2022-10-18 21:08:31 [scrapy.extensions.telnet] INFO: Telnet Password: b0478e14d2ae082b
+2022-10-18 21:08:31 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2022-10-18 21:08:31 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2022-10-18 21:08:31 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2022-10-18 21:08:31 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2022-10-18 21:08:31 [scrapy.core.engine] INFO: Spider opened
+2022-10-18 21:08:32 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2022-10-18 21:08:32 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2022-10-18 21:08:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://music.163.com/discover/toplist> (referer: None)
+2022-10-18 21:08:33 [scrapy.core.engine] INFO: Closing spider (finished)
+2022-10-18 21:08:33 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 229,
+ 'downloader/request_count': 1,
+ 'downloader/request_method_count/GET': 1,
+ 'downloader/response_bytes': 40740,
+ 'downloader/response_count': 1,
+ 'downloader/response_status_count/200': 1,
+ 'elapsed_time_seconds': 1.008574,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2022, 10, 18, 13, 8, 33, 31725),
+ 'httpcompression/response_bytes': 260851,
+ 'httpcompression/response_count': 1,
+ 'log_count/DEBUG': 2,
+ 'log_count/INFO': 10,
+ 'response_received_count': 1,
+ 'scheduler/dequeued': 1,
+ 'scheduler/dequeued/memory': 1,
+ 'scheduler/enqueued': 1,
+ 'scheduler/enqueued/memory': 1,
+ 'start_time': datetime.datetime(2022, 10, 18, 13, 8, 32, 23151)}
+2022-10-18 21:08:33 [scrapy.core.engine] INFO: Spider closed (finished)
